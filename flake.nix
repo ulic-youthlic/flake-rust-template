@@ -26,6 +26,7 @@
           mkShell {
             buildInputs = [
               (rust-bin.fromRustupToolchainFile ./rust-toolchain.toml)
+              rust-analyzer
             ];
           };
       }
